@@ -1,28 +1,17 @@
-import React from 'react';
-import { Header } from './components/common';
-import { BrowserRouter as Router } from 'react-router-dom';
+import React from "react";
+import { Header } from "./components/common";
+import { BrowserRouter as Router } from "react-router-dom";
 
-
-
-import './App.css';
-
-
-
+import "./App.css";
 
 function App() {
-    return ( < div className = "App" >
-
-        <
-        Router >
-        <
-        Header / >
-        <
-        /Router>  <
-        /div>
-
-    );
+ return (
+  <div className="App">
+   <Router>
+    <Header />
+   </Router>
+  </div>
+ );
 }
-
-
 
 export default App;
