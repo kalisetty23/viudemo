@@ -17,7 +17,8 @@ function Navbar() {
  return (
   <section className="navbar">
    <Link to="/" className="navbar-item">
-    <RiPulseFill size="1.3em" /> Dashboard
+    <RiPulseFill size="1.3em" />
+    <span className="header-element-text">Dashboard</span>
    </Link>
    <Link to="/about" className="navbar-item">
     <RiShoppingCartLine size="1.3em" /> Point Of sale
