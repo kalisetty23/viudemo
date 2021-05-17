@@ -1,15 +1,16 @@
 import React from "react";
-import { Header } from "./components/common";
-import { BrowserRouter as Router } from "react-router-dom";
+import { Header, Products } from "./components/common";
+import { Switch, Route } from "react-router-dom";
 
 import "./App.css";
 
 function App() {
  return (
   <div className="App">
-   <Router>
-    <Header />
-   </Router>
+   <Header />
+   <Switch>
+    <Route exact path="/products" component={Products} />
+   </Switch>
   </div>
  );
 }
